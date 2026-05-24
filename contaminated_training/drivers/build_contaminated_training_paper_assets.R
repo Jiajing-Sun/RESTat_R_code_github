@@ -1,7 +1,7 @@
 # ==============================================================
 # build_contaminated_training_paper_assets.R
-# Build paper-facing tables, figures, and notes for the
-# targeted contaminated-training robustness study.
+# Build tables, figures, and notes for the targeted
+# contaminated-training robustness study.
 # ==============================================================
 
 bootstrap_script_path <- function() {
@@ -402,9 +402,9 @@ notes <- c(
           100 * rsms_ks_all_dgp_mild, 100 * ssms_ks_all_dgp_mild, 100 * hac_ks_all_dgp_mild),
   sprintf("Alternative mild-contamination averages (train_b<=0.005): RSMS weighted CUSUM=%.1f%%, RSMS Page-CUSUM=%.1f%%, RSMS multiscale MOSUM=%.1f%% post-break detection.",
           100 * rsms_wc_mild, 100 * rsms_page_mild, 100 * rsms_ms_mild),
-  sprintf("The selected figures and tables are paper-facing assets; matching CSV-level summaries remain in outputs/%s/summary.", output_tier)
+  sprintf("Selected figures and tables are written here; CSV-level summaries remain in outputs/%s/summary.", output_tier)
 )
 atomic_write_lines(notes, file.path(asset_dir, "contam_paper_notes.txt"))
 
-message("Wrote paper-facing contamination assets to: ", normalize_path2(asset_dir, mustWork = FALSE))
+message("Wrote contamination-study tables and figures to: ", normalize_path2(asset_dir, mustWork = FALSE))
 message("Updated figures in: ", normalize_path2(fig_dir, mustWork = FALSE))
