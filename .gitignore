@@ -1,0 +1,6 @@
+.DS_Store
+.Rhistory
+.RData
+*.RData
+*.rds
+empirical/legacy_source/data/SPX.csv

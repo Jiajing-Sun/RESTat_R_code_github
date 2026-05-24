@@ -1,0 +1,59 @@
+Empirical design: m = 50, q_used = 4, finite horizons = 1, 2, 5.
+Training window: 2019-10-21 to 2019-12-31.
+Monitoring window: 2020-01-02 to 2020-03-13.
+
+Earliest main-family detections by horizon:
+ T_label              method_label first_rejection_date
+       1         RSMS KS (gamma=0)           2020-02-26
+       1      RSMS KS (gamma=0.15)           2020-02-26
+       1  RSMS weighted CvM [Late]           2020-03-13
+       2      RSMS KS (gamma=0.15)           2020-02-27
+       2         RSMS KS (gamma=0)           2020-02-27
+       2   RSMS weighted CvM [Mid]           2020-04-01
+       2 RSMS weighted CvM [Early]           2020-04-01
+       2       HAC KS (gamma=0.15)           2020-04-01
+       2          HAC KS (gamma=0)           2020-04-02
+       2     RSMS weighted CvM [U]           2020-04-07
+       2  RSMS weighted CvM [Late]           2020-04-13
+       5      RSMS KS (gamma=0.15)           2020-03-13
+ trading_gap_from_2020_03_16 stat_over_cv
+                         -13     1.984700
+                         -13     1.901386
+                          -1     1.054868
+                         -12     3.359618
+                         -12     3.340080
+                          12     2.159770
+                          12     1.713043
+                          12     1.247810
+                          13     1.223746
+                          16     2.103754
+                          19     2.293466
+                          -1     2.749341
+
+Earliest retained alternative-detector detections by horizon:
+ T_label                               method_label first_rejection_date
+       1 RSMS MultiscaleMOSUM (H050_100_200, Equal)           2020-01-31
+       1   RSMS WeightedCUSUM (gamma=0.15, InvSqrt)           2020-02-24
+       1      RSMS WeightedCUSUM (gamma=0, InvSqrt)           2020-02-24
+       1                RSMS PageCUSUM (gamma=0.15)           2020-02-26
+       1                   RSMS PageCUSUM (gamma=0)           2020-02-26
+       1    HAC WeightedCUSUM (gamma=0.15, InvSqrt)           2020-02-27
+       1       HAC WeightedCUSUM (gamma=0, InvSqrt)           2020-02-27
+       1  HAC MultiscaleMOSUM (H050_100_200, Equal)           2020-02-27
+       1                 HAC PageCUSUM (gamma=0.15)           2020-03-02
+       1                    HAC PageCUSUM (gamma=0)           2020-03-02
+       2 RSMS MultiscaleMOSUM (H050_100_200, Equal)           2020-01-31
+       2   RSMS WeightedCUSUM (gamma=0.15, InvSqrt)           2020-02-24
+ trading_gap_from_2020_03_16 stat_over_cv
+                         -30    22.667067
+                         -15    43.320305
+                         -15    30.622832
+                         -13    19.703807
+                         -13    14.923267
+                         -12    14.964071
+                         -12     7.976848
+                         -12     7.507120
+                         -10     5.463239
+                         -10     4.335914
+                         -30    74.071887
+                         -15    47.326386
